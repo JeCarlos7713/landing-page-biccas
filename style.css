@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --green-biccas  : #54BD95;
+    --black-biccas  : #191A15;
+    --gray-biccas   : #A6A6A6;
+    --white-biccas  : #FFF;
+    --blue-biccas   : #161C28;
+    --blue-start    : #222938;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo .title-green{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.title-green{
+    color: var(--green-biccas);
+}
+
+ul{
+    list-style: none;
+}
+
+a { 
+    text-decoration: none;
+}
+
+#list-nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+ul li{
+    margin: 0 10px;
+}
+
+ul li a {
+    color: var(--gray-biccas);
+}
