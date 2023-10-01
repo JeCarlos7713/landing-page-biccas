@@ -33,17 +33,21 @@ header {
     width: 100%;
     height: 550px;
     background-color: #F2F1EF;
+    z-index: 10;
 }
 
 #content-circle{
-    border-radius: 100%;
-    background: #52BDAA;
-    filter: blur(230px);
-    height: 400px;
-    width: 400px;
     position: absolute;
     top: -70px;
     left: -70px;
+}
+
+.circle-green{
+    border-radius: 100%;
+    background: #52BDAA;
+    filter: blur(250px);
+    height: 400px;
+    width: 400px;
 }   
 
 nav {
@@ -90,6 +94,7 @@ ul li a {
     grid-template-columns: 1fr 1fr; /* Divide o container em duas colunas de tamanho igual */
     grid-gap: 10px; /* Espaço entre os blocos */
     margin-top: 30px;
+    position: relative;
 }
 
 #infos_hero{
@@ -179,13 +184,13 @@ ul li a {
 
 .enter-amount{
     position: absolute;
-    top: 120px;
-    left: 48%;
+    top: 8%;
+    left: 49%;
     z-index: 10;
     width: 200px;
     background-color: var(--white-biccas);
     color: var(--black-biccas);
-    padding: 15px;
+    padding: 10px;
     border-radius: 15px;
 }
 
@@ -215,4 +220,89 @@ ul li a {
 .btn-send-value:hover{
     background-color: var(--white-biccas);
     color: var(--green-biccas);
+}
+
+.total-income{
+    position: absolute;
+    top: 67%;
+    left: 55%;
+    z-index: 10;
+    width: 110px;
+    background-color: var(--white-biccas);
+    color: var(--black-biccas);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.title-income span{
+    color: var(--gray-biccas);
+    font-size: 1.2rem;   
+}
+
+.line-value-income {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #F2F1EF;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.database{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #FBC75E;
+    color: var(--white-biccas);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 10%;
+    right: 8%;
+    transform: rotate(15deg);
+}
+
+.database svg{
+    width: 24px;
+}
+
+.check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #4535AF;
+    color: var(--white-biccas);
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 40%;
+    right: 41%;
+    transform: rotate(-15deg);
+}
+
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #FFAA94;
+    color: var(--white-biccas);
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 92%;
+    right: 17%;
+    transform: rotate(15deg);
+}
+
+.message svg{
+    width: 20px;
 }
